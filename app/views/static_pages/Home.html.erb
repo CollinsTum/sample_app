@@ -1,2 +1,12 @@
-<h1>StaticPages#Home</h1>
-<p>Find me in app/views/static_pages/Home.html.erb</p>
+<div	class="center	jumbotron">
+	<h1>Welcome	to	TechPro254</h1>
+		<h4>
+			How much do you know about Technology? <br>
+    			<a	href="http://www.railstutorial.org/">Click Here</a>
+			to Test yourself, You just might surprise yourself!
+		</h4>
+<h3>
+    <%=	link_to	"Sign up now!", "#", class: "btn btn-lg btn-primary" %> or <%=	link_to	"LogIn", "#", class: "btn btn-lg btn-primary" %> 
+</h3>    
+</div>
+<%=	link_to	image_tag("logo.jpg", alt: "Rails	logo"), 'http://rubyonrails.org/' %>
