@@ -9,6 +9,56 @@ body {
     text-align: center;
 }
 .center h1 {
-    margin-bottom: 10px;    
-        
+    margin-bottom: 10px;  
+}
+logopic {
+	float: left;
+}
+    
+/* topography */
+h1, h2 {
+    letter-spacing: -2px;
+}
+
+/* logo */
+
+#logo	{
+		float:	left;
+		margin-right:	10px;
+		font-size:	1.7em;
+		color:	#fff;
+		letter-spacing:	-1px;
+		padding-top:	9px;
+		font-weight:	bold;
+}
+#logo:hover	{
+		color:	#fff;
+		text-decoration:	none;
+}
+
+/*	footer	*/
+
+footer	{
+		background-color: grey;
+		margin-top:	45px;
+		padding-top:	5px;
+		border-top:	1px	solid	#eaeaea;
+		color:	#777;
+}
+footer	a	{
+		color:	#555;
+}
+footer	a:hover	{
+		color:	#222;
+}
+footer	small	{
+		float:	left;
+}
+footer	ul	{
+		float:	right;
+		list-style:	none;
+}
+footer	ul	li	{
+		float:	left;
+		margin-left:	15px;
 }
