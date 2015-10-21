@@ -6,13 +6,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-<%= render 'layouts/shim' %>
+  <%= render 'layouts/shim' %>
 
 </head>
 <body>
 <%= render 'layouts/shim' %>
 	<header	class="navbar	navbar-fixed-top	navbar-inverse">
 			<div	class="container">
+			<!--	<%=	link_to	image_tag("logo.jpg", id: "logopic", alt: "Rails	logo"), 'http://rubyonrails.org/' %> -->
 					<%=	link_to	"TechPro254", static_pages_Home_path,	id:	"logo"	%>								
 					  <nav>
 							<ul	class="nav	navbar-nav	navbar-right">
@@ -24,10 +25,12 @@
 			</div>
 	</header>
 <div class="container">
+  
   <%= yield %>
 
-<%= render 'layouts/footer' %>
+
 
 </div>
+<%= render 'layouts/footer' %>
 </body>
 </html>
