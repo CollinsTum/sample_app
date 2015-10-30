@@ -5,21 +5,27 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+      <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
 
 </head>
 <body>
+	<h1></h1>
 <%= render 'layouts/shim' %>
-	<header	class="navbar	navbar-fixed-top	navbar-inverse">
+ <div class="container">
+ 	<% flash.each do |message_type,	message| %>
+  
+<% end %>
+ </div>
+	<header	class="navbar transparent navbar-fixed-top ">
 			<div	class="container">
-			<!--	<%=	link_to	image_tag("logo.jpg", id: "logopic", alt: "Rails	logo"), 'http://rubyonrails.org/' %> -->
+				
 					<%=	link_to	"TechPro254", static_pages_Home_path,	id:	"logo"	%>								
 					  <nav>
-							<ul	class="nav	navbar-nav	navbar-right">
-									<li><%=	link_to	"Home", static_pages_Home_path	%></li>
-									<li><%=	link_to	"Help", static_pages_Help_path	%></li>
-									<li><%=	link_to	"LogIn", static_pages_LogIn_path	%></li>
+							<ul	class="nav	navbar-nav	navbar-right" >
+									<li><%=	link_to	"Home", static_pages_Home_path, class:'glyphicon glyphicon-home', id:"navright"	%></li>
+									<li><%=	link_to	"Help", static_pages_Help_path, class:'glyphicon glyphicon-question-sign', id:"navright"	%></li>
+									<li><%=	link_to	"LogIn", static_pages_LogIn_path, class:'glyphicon glyphicon-log-in', id:"navright"	%></li>
 							</ul>
 						</nav>
 			</div>
@@ -31,6 +37,8 @@
 
 
 </div>
-<%= render 'layouts/footer' %>
+<%= render 'layouts/footer' %> <br>
+<h1></h1>
+<%= debug(params) if Rails.env.development? %>
 </body>
 </html>
